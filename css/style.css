@@ -265,7 +265,7 @@ body {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
     .hero .hero__content .container {
-      min-width: 320px; }
+      width: 320px; }
       .hero .hero__content .container .hero__menu {
         display: none; }
       .hero .hero__content .container .hero__body {
