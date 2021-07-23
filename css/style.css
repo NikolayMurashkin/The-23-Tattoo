@@ -65,36 +65,33 @@ body {
   font-family: Comfortaa; }
 
 .hero__btn {
-  position: relative; }
-  .hero__btn .hero__btn-cover {
-    width: 406px;
-    height: 64px;
-    background: -webkit-gradient(linear, left top, right top, from(#EE0979), to(#FF6A00));
-    background: -webkit-linear-gradient(left, #EE0979 0%, #FF6A00 100%);
-    background: -o-linear-gradient(left, #EE0979 0%, #FF6A00 100%);
-    background: linear-gradient(90deg, #EE0979 0%, #FF6A00 100%);
-    -webkit-box-shadow: 0px 5px 10px rgba(244, 46, 75, 0.2);
-    box-shadow: 0px 5px 10px rgba(244, 46, 75, 0.2);
-    border-radius: 15px;
-    font-family: "Exo 2";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 28px;
-    text-align: center;
-    color: #FFFFFF;
-    padding-bottom: 5px;
-    overflow: hidden;
-    -webkit-transition: all .25s ease;
-    -o-transition: all .25s ease;
-    transition: all .25s ease;
-    position: absolute;
-    -ms-transform: translateX(-240px);
-    -webkit-transform: translateX(-240px);
-    transform: translateX(-240px);
-    -webkit-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out; }
+  width: 406px;
+  height: 64px;
+  background: -webkit-gradient(linear, left top, right top, from(#EE0979), to(#FF6A00));
+  background: -webkit-linear-gradient(left, #EE0979 0%, #FF6A00 100%);
+  background: -o-linear-gradient(left, #EE0979 0%, #FF6A00 100%);
+  background: linear-gradient(90deg, #EE0979 0%, #FF6A00 100%);
+  -webkit-box-shadow: 0px 5px 10px rgba(244, 46, 75, 0.2);
+  box-shadow: 0px 5px 10px rgba(244, 46, 75, 0.2);
+  border-radius: 15px;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
+  padding-bottom: 5px;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+  .hero__btn:hover {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+    -webkit-box-shadow: 10px -10px 25px 0px rgba(238, 9, 120, 0.3), -10px 10px 25px 0px rgba(255, 106, 0, 0.3);
+    box-shadow: 10px -10px 25px 0px rgba(238, 9, 120, 0.3), -10px 10px 25px 0px rgba(255, 106, 0, 0.3); }
 
 .container {
   max-width: 1258px;
