@@ -5,7 +5,7 @@ $exo: "Exo 2";
 $gra: linear-gradient(90deg, #EE0979 0%, #FF6A00 100%);
 
 body{
-	background-color: #E5E5E5;
+	background-color: #F8F9FF;
 	font-family: Comfortaa;
 }
 
@@ -162,7 +162,82 @@ body{
 	
 }
 
-@media (max-width: 999px){
+
+
+.services {
+	margin-bottom: 120px;
+	.container {
+		.services__title {
+			font-weight: bold;
+			font-size: 36px;
+			line-height: 40px;
+			text-align: center;
+			margin: 120px 0 60px 0;
+		}
+		.services__row {
+			display: flex;
+			width: 100%;
+			.services__col {
+				flex: 0 1 33.333%;
+				margin-right: 30px;
+				&:last-child{
+					margin-right: 0px;
+				}
+				.services__item {
+					display: flex;
+					flex-direction: column;
+					padding: 30px;
+					background: #FFFFFF;
+					box-shadow: 0px 5px 40px rgba(0, 3, 34, 0.1);
+					border-radius: 15px;
+					height: 100%;
+					width: 100%;
+					.item__title {
+						font-family: $exo;
+						font-weight: 600;
+						font-size: 24px;
+						line-height: 150%;
+						text-align: center;
+						margin-bottom: 30px;
+						flex: 0 1 auto;
+						&::after{
+							content: '';
+							display: block;
+							max-width: 100%;
+							height: 2px;
+							background: $gra;
+							margin: 2px auto;
+						}
+					}
+					.item__list {
+						margin-bottom: 45px;
+						flex: 1 0 auto;
+						.list__service {
+							font-family:$exo;
+							font-size: 17px;
+							line-height: 150%;
+							text-align: center;
+							margin-bottom: 10px;
+							&:last-child{
+								margin-bottom: 0;
+							}
+						}
+					}
+					.item__price {
+						font-weight: bold;
+						font-size: 36px;
+						line-height: 40px;
+						text-align: center;
+						flex: 0 1 auto;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media (max-width: 1258px){
 	.hero{
 		.hero__content{
 			.container{
@@ -191,32 +266,61 @@ body{
 			}
 		}
 	}
+	.services{
+		.container{
+			.services__row{
+				.services__col{
+					.services__item{
+						padding: 15px;
+						.item__title{
+						font-size: 22px;
+						
+						}
+						.item__price{
+							font-size: 24px;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
-@media (max-width:767px){
+
+
+@media (max-width: 767px){
 	.hero{
 		flex-wrap: wrap;
-		text-align: center;
 		.hero__content{
 			.container{
+				min-width: 320px;
 				.hero__menu{
 					display: none;
 				}
 				.hero__body{
 					padding: 0;
 					width: 100%;
+					text-align: center;
 					.hero__body-container{
 						width: 100%;
 						padding: 20px 0 40px 0;
 						.hero__title{
-							font-size: 32px;
+							font-size: 28px;
+							display: inline-block;
+							width: 100%;
 						}
 						.hero__btn{
 							width: 100%;
-							font-size: 20px;
+							font-size: 15px;
 						}
 						.hero__logo{
-							transform: scale(0.8) translateX(-5%);
+							transform: scale(0.6) translateX(-5%);
+						}
+						.hero__address{
+							font-size: 15px;
+							margin-bottom: 40px;
+							display: inline-block;
+							width: 100%;
 						}
 					}
 				}
@@ -225,12 +329,59 @@ body{
 		.hero__image{
 			flex: 0 0 100%;
 			.hero__image-phone{
+				width: 100%;
+				border-radius: 0;
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				height: 100px;
+				background: rgba(238, 9, 120, 0.1);
+				backdrop-filter: blur(3px);
+				a{
+					font-weight: 500;
+					font-size: 17px;
+					line-height: 25px;
+					position: absolute;
+					top: 20px;
+					left: 50%;
+					transform: translateX(-50%);
+					display: block;
+				}
+				
+			}
+		}
+	}
+	.services{
+		.container{
+			.services__title{
+				margin: 60px 0 40px 0;
+			}
+			.services__row{
+				flex-direction: column;
+				.services__col{
+					margin: 0 0 25px 0;
+					.services__item{
+						padding: 25px;
+						.item__title{
+							font-size: 22px;
+							}
+						.item__list{
+							.list__service{
+								br {content: ""}
+								br:after {content: "\00a0"}
+							}
+						}
+						.item__price{
+							font-size: 24px;
+						}
+					}
+				}
 			}
 		}
 	}
 }
 
-@media (max-width:479px){
+@media (max-width: 479px){
 	.hero{
 		flex-wrap: wrap;
 		.hero__content{
@@ -289,6 +440,39 @@ body{
 					display: block;
 				}
 				
+			}
+		}
+	}
+	.services{
+		margin-bottom: 60px;
+		.container{
+			.services__title{
+				font-size: 28px;
+				margin: 60px 0 40px 0;
+			}
+			.services__row{
+				flex-direction: column;
+				.services__col{
+					margin: 0 0 25px 0;
+					.services__item{
+						padding: 20px;
+						.item__title{
+							font-size: 22px;
+							br {content: ""}
+							br:after {content: "\000A"}
+						}
+						.item__list{
+							margin-bottom: 20px;
+							.list__service{
+								
+								font-size: 15px;
+							}
+						}
+						.item__price{
+							font-size: 24px;
+						}
+					}
+				}
 			}
 		}
 	}
