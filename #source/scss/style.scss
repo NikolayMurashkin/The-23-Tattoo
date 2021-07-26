@@ -196,6 +196,7 @@ body{
 @media (max-width:767px){
 	.hero{
 		flex-wrap: wrap;
+		text-align: center;
 		.hero__content{
 			.container{
 				.hero__menu{
@@ -215,7 +216,7 @@ body{
 							font-size: 20px;
 						}
 						.hero__logo{
-							transform: scale(0.8) translateX(-12%);
+							transform: scale(0.8) translateX(-5%);
 						}
 					}
 				}
@@ -224,7 +225,6 @@ body{
 		.hero__image{
 			flex: 0 0 100%;
 			.hero__image-phone{
-				display: none;
 			}
 		}
 	}
@@ -255,7 +255,7 @@ body{
 							font-size: 15px;
 						}
 						.hero__logo{
-							transform: scale(0.6) translateX(-32%);
+							transform: scale(0.6) translateX(-5%);
 						}
 						.hero__address{
 							font-size: 15px;
@@ -270,7 +270,25 @@ body{
 		.hero__image{
 			flex: 0 0 100%;
 			.hero__image-phone{
-				display: none;
+				width: 100%;
+				border-radius: 0;
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				height: 100px;
+				background: rgba(238, 9, 120, 0.1);
+				backdrop-filter: blur(3px);
+				a{
+					font-weight: 500;
+					font-size: 17px;
+					line-height: 25px;
+					position: absolute;
+					top: 20px;
+					left: 50%;
+					transform: translateX(-50%);
+					display: block;
+				}
+				
 			}
 		}
 	}

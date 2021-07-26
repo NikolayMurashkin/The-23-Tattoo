@@ -236,7 +236,8 @@ body {
 @media (max-width: 767px) {
   .hero {
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    text-align: center; }
     .hero .hero__content .container .hero__menu {
       display: none; }
     .hero .hero__content .container .hero__body {
@@ -251,15 +252,13 @@ body {
           width: 100%;
           font-size: 20px; }
         .hero .hero__content .container .hero__body .hero__body-container .hero__logo {
-          -webkit-transform: scale(0.8) translateX(-12%);
-          -ms-transform: scale(0.8) translateX(-12%);
-          transform: scale(0.8) translateX(-12%); }
+          -webkit-transform: scale(0.8) translateX(-5%);
+          -ms-transform: scale(0.8) translateX(-5%);
+          transform: scale(0.8) translateX(-5%); }
     .hero .hero__image {
       -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
-      flex: 0 0 100%; }
-      .hero .hero__image .hero__image-phone {
-        display: none; } }
+      flex: 0 0 100%; } }
 
 @media (max-width: 479px) {
   .hero {
@@ -283,9 +282,9 @@ body {
             width: 100%;
             font-size: 15px; }
           .hero .hero__content .container .hero__body .hero__body-container .hero__logo {
-            -webkit-transform: scale(0.6) translateX(-32%);
-            -ms-transform: scale(0.6) translateX(-32%);
-            transform: scale(0.6) translateX(-32%); }
+            -webkit-transform: scale(0.6) translateX(-5%);
+            -ms-transform: scale(0.6) translateX(-5%);
+            transform: scale(0.6) translateX(-5%); }
           .hero .hero__content .container .hero__body .hero__body-container .hero__address {
             font-size: 15px;
             margin-bottom: 40px;
@@ -296,4 +295,23 @@ body {
       -ms-flex: 0 0 100%;
       flex: 0 0 100%; }
       .hero .hero__image .hero__image-phone {
-        display: none; } }
+        width: 100%;
+        border-radius: 0;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 100px;
+        background: rgba(238, 9, 120, 0.1);
+        -webkit-backdrop-filter: blur(3px);
+        backdrop-filter: blur(3px); }
+        .hero .hero__image .hero__image-phone a {
+          font-weight: 500;
+          font-size: 17px;
+          line-height: 25px;
+          position: absolute;
+          top: 20px;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+          display: block; } }
